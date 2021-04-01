@@ -5,6 +5,7 @@ plugin for gradle.
 
 ## Installation ##
 
+### pathogen
 - Install [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) into `~/.vim/autoload/` and add the
    following line to your `~/.vimrc`:
 
@@ -26,6 +27,12 @@ instead.
 
 That's it. Pathogen should handle the rest.
 
+### vim-plug
+
+add following line to your '~/.vimrc', or '~/.config/nvim/init.vim' if you use neovim:
+
+Plug 'QiBaobin/vim-gradle'
+
 ## Usage ##
 
 ### Syntax Highlighting ###
@@ -36,6 +43,13 @@ That's it. Pathogen should handle the rest.
 
 You can now use `:compiler gradle` to set gradle as the compiler. `:make build` will then run
 `gradle build` (for example) and the quickfix window will be loaded with parsed error results.
+
+
+### Different gradle distribution
+
+You can use below line to set a different a different distribution, like gradlew:
+
+set makeprg=./gradlew
 
 ## Credits ##
 
