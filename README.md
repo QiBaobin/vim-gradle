@@ -29,9 +29,9 @@ That's it. Pathogen should handle the rest.
 
 ### vim-plug
 
-add following line to your '~/.vimrc', or '~/.config/nvim/init.vim' if you use neovim:
+add following line to your `~/.vimrc`, or `~/.config/nvim/init.vim` if you use neovim:
 
-Plug 'QiBaobin/vim-gradle'
+    Plug 'QiBaobin/vim-gradle'
 
 ## Usage ##
 
@@ -49,7 +49,7 @@ You can now use `:compiler gradle` to set gradle as the compiler. `:make build` 
 
 You can use below line to set a different a different distribution, like gradlew:
 
-set makeprg=./gradlew
+    set makeprg=./gradlew
 
 ## Credits ##
 
