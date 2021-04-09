@@ -49,7 +49,7 @@ You can now use `:compiler gradle` to set gradle as the compiler. `:make build` 
 
 You can use below line to set a different a different distribution, like gradlew:
 
-    set makeprg=./gradlew
+    set g:gradle_makeprg=./gradlew
 
 ## Credits ##
 

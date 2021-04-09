@@ -10,7 +10,11 @@ if exists(":CompilerSet") != 2 " older Vim always used :setlocal
   command -nargs=* CompilerSet setlocal <args>
 endif
 
-CompilerSet makeprg=gradle
+if exists("g:gradle_makeprg")
+  execute "CompilerSet makeprg=" . g:gradle_makeprg
+else
+  CompilerSet makeprg=gradle
+endif
 
 CompilerSet errorformat=
     \%E[ant:scalac]\ %f:%l:\ error:\ %m,
